@@ -1,0 +1,81 @@
+* {
+    padding: 0;
+    margin: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+body {
+    background-color: turquoise;
+}
+.container {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    }
+.card {
+    text-align: justify;
+    background-color: azure;
+    border: 2px solid lightgray;
+    padding: 40px 45px;
+    border-radius: 25px;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.0), rgba(0,0,0,0.0)),  url(../img/hill.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    transition: .5s ease-in-out;
+    
+}
+ .card .title {
+    font-size: 29px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: white;
+    transform: translateY(180px);
+    transition: transform .5s ease-out;
+    transition-delay: .5s;
+}
+
+.card .content {
+    font-size: 15px;
+    color: white;
+    margin-bottom: 32px;
+    text-align: justify;
+    transform: translateY(200px);
+    transition: all .5s ease-out;
+    transition-delay: .2s;
+
+}
+.card .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 12px 35px;
+    background-color: black;
+    font-size: 17px;
+    transform: translateY(210px);
+    transition: transform .5s ease-out;
+    transition-delay: .0s;
+}
+.card:hover {
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)),  url(../img/hill.jpg);
+    transform: scale(1.2);
+}
+
+.card:hover .title, .card:hover .content, .card:hover .btn {
+    transform: translateY(0);
+
+}
+.card:hover .title {
+    transition-delay: .0s;
+}
+
+.card:hover .content {
+    transition-delay: .5s;
+}
+.card:hover .btn {
+    transition-delay: .7s;
+}
+}
